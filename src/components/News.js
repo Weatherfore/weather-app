@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './news.css';
 import {Link} from 'react-router-dom';
 async function searchNews(q) {
   q = encodeURIComponent(q);
@@ -14,15 +14,15 @@ async function searchNews(q) {
   const body = await response.json();
   return body.value;
 }
-function News() {
-  const [query, setQuery] = React.useState("docker");
+function News(props) {
+  const [query, setQuery] = React.useState("India");
   const [list, setList] = React.useState(null);
   const search = (e) => {
     e.preventDefault();
     searchNews(query).then(setList);
   };
   return (
-    <div className="app">
+    <div className="component">
       <form onSubmit={search}>
         <input
           autoFocus
