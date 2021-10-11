@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import BsStuff from'./BsStuff';
 const Home=()=>{
     return(

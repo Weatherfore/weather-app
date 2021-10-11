@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+
 const Form = props => (
 	<form class="center" onSubmit={props.getWeather}>
 		<input class="container" type="text" name="city" placeholder="City..."/>

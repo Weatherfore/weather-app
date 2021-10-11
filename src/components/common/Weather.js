@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+
 
 const Weather = props => (
 	<div className="weather__info">

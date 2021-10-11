@@ -84,3 +84,14 @@ body {
   .item .meta > *:not(:last-child) {
     margin-right: 2em;
   }
+
+  .news_body{
+    height:90vh;
+    background: url("../../asset/asset11.jpg") center center no-repeat;
+    background-size:cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: rgb(41, 165, 138);
+    opacity:0.8
+  }

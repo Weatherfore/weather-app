@@ -1,0 +1,81 @@
+
+.title_container{
+    height: 90vh;
+    background: url("../../asset/asset8.jpg") center center no-repeat;
+    background-size:Cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: rgb(109, 19, 75);
+    opacity:0.9
+  }
+
+ .body_container{
+  height: 90vh;
+  background: url("../../asset/asset9.jpg") center center no-repeat;
+  background-size:cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: rgb(204, 31, 117);
+  opacity:0.8
+ }
+
+ .submit{
+   background-color: mediumvioletred;
+  }
+
+  .admin_container{
+    height:90vh;
+    background: url("../../asset/asset10.jpg") center center no-repeat;
+    background-size:cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: rgb(41, 165, 138);
+    opacity:0.8
+  }
+
+  .submit2{
+    background-color: rgb(84, 158, 127);
+   }
+   .span{
+     text-align: center;
+     text-decoration-line: underline;
+     font-size: larger;
+     font-style: italic;
+   }
+   .button1 {
+    border: 0;
+    padding: 20px 12px;
+    margin: 0 0px;
+    border-radius: 2px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #74c5ad;
+    color: #fff;
+    font-weight: 100;
+  }
+  
+  .admin_dashboard{
+  height: 190vh;
+  border-width: 20ch;
+  background: url("../../asset/asset12.jpg") center center no-repeat;
+  background-size:200%;
+  background-color: rgb(167, 110, 90);
+  background: linear-gradient(to right, #e67e22, #e74c3c);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: rgb(204, 31, 117);
+  opacity:0.8
+  }
+  .wrapper1{
+    background: linear-gradient(to right, #e67e22, #e74c3c);
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

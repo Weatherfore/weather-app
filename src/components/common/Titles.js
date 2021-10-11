@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+
 const Titles = () => (
 	<div>
 		<h2 className="title-container__title">Weather Finder</h2>

@@ -1,9 +1,9 @@
-import asset2 from '../asset/asset2.jpg';
-import asset3 from '../asset/asset3.jpg';
-import asset4 from '../asset/asset4.jpg';
-import asset5 from '../asset/asset5.jpg';
-import asset6 from '../asset/asset6.jpg';
-import asset7 from '../asset/asset7.jpg';
+import asset2 from '../../asset/asset2.jpg';
+import asset3 from '../../asset/asset3.jpg';
+import asset4 from '../../asset/asset4.jpg';
+import asset5 from '../../asset/asset5.jpg';
+import asset6 from '../../asset/asset6.jpg';
+import asset7 from '../../asset/asset7.jpg';
 
 
 // source: https://getbootstrap.com/docs/4.0/components/carousel/ 

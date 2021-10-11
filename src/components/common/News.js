@@ -1,6 +1,5 @@
 import React from 'react';
 import './news.css';
-import {Link} from 'react-router-dom';
 async function searchNews(q) {
   q = encodeURIComponent(q);
   const response = await fetch(`https://bing-news-search1.p.rapidapi.com/news/search?freshness=Day&textFormat=Raw&safeSearch=Strict&q=${q}`, {
@@ -22,8 +21,8 @@ function News(props) {
     searchNews(query).then(setList);
   };
   return (
-    <div className="component">
-      <form onSubmit={search}>
+    <div className="news_body">
+      <form className="jumbotron" onSubmit={search}>
         <input
           autoFocus
           value={query}
