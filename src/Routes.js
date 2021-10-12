@@ -40,6 +40,7 @@ const Routes =()=>{
                             <Route path="/viewAllAdmins"><GetAllAdmin/></Route>
                             <Route path="/deleteAdminById"><DeleteAdminById/></Route>
                             <Route path="/updateAdminById"><UpdateAdminById/></Route>
+                            <Route path="/deleteUserByIdFromAdmin"><DeleteUserByIdFromAdmin/></Route>
                             <Route path="/adminDashboard"><DashboardAdmin/></Route>
                             <Route path="/news"><News/></Route>
                            <Route path="/weather"><WeatherService/></Route>
