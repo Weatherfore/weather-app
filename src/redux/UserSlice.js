@@ -24,6 +24,9 @@ export const userSlice = createSlice({
     },
     deleteUserById: (state, action) => {
       state.userState = action.payload;
+    },
+    updateUserById:(state,action)=>{
+      state.userState=action.payload;
     }
 
   }
