@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getUserById} from '../../redux/UserSlice';
-
+import '../../components/common/common.css';
 const GetUserById = () => {
 
     const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const GetUserById = () => {
 
     const submitGetUserById = (evt) => {
         console.log("submitGetuserById");
-        axios.get(`http://localhost:8082/swagger-ui.html#/registration-controller/getUserByIdUsingGET_1/${oneUser.rid}`)
+        axios.get(`http://localhost:8086/weather/getUserById/${oneUser.rid}`)
             .then(async (response) => {
                 await dispatch(getUserById(response.data));
                 setDisplayOneUser(`User Id: ${response.data.rid}, Name: ${response.data.userName}`);
@@ -33,18 +33,18 @@ const GetUserById = () => {
     }
 
     return (
-        <div className="container" >
-            <h1 className="display-4 text-primary">Get User By Id</h1>
+        <div className="user_container" >
+            <h1 className="display-4 p-3 mb-2 bg-gradient-danger d-flex font-weight-bold justify-content-center">Get User By Id</h1>
             
-            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3">
-                <p>Enter the user Id to get details</p>
-                <form className="form form-group row pt-3 pb-3 px-3 py-3" data-testid="invalid-form">
+            <div className="border border-danger pt-3 pb-3 px-3 py-3 mt-3 mb-3 jumbotron">
+                <h5 >Enter the user Id to get details</h5>
+                <div>
+                <form className="form form-group form-dark row mt-3 font-weight-bold font-italic jumbotron d-flex justify-content-center border" data-testid="invalid-form">
                     <input
                         type="number"
                         id="rid"
                         //adding test-jest
                         data-testid="rid"
-                        data-testid="required-input" required
                         name="rid"
                         className="form-control mb-3"
                         value={oneUser.rid}
@@ -56,13 +56,16 @@ const GetUserById = () => {
                         id="submit"
                         data-testid="submit"
                         name="submit"
-                        className="btn btn-primary mb-3"
+                        className="btn btn-primary mb-3 submit3"
                         value="Get User Details"
                         onClick={submitGetUserById}
                     />
                 </form>
                 {/* conditional rendering with displayOneEmp and setDisplayOneEmp */}
-                <p>{displayOneUser}</p>
+                </div>
+                <span>
+                <p >{displayOneUser}</p>
+                </span>
             </div>
         </div>
     );

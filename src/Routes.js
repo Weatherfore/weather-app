@@ -16,10 +16,12 @@ import DeleteUserByIdFromAdmin from './components/admin/DeleteUserByIdFromAdmin'
 import DashboardAdmin from './components/admin/AdminDasboard';
 import UpdateAdminById from './components/admin/UpdateAdminById'; 
 import News from './components/common/News';
-import WeatherService from './service/WeatherService';
+import UserDashboard from './components/users/UserDashboard';
 import GetUserByIdFromUser from './components/users/GetUserById';
 import DeleteUserById from './components/users/DeleteUserById';
 import UpdateUserById from './components/users/UpdateUserById';
+import GetWeatherByCity from './components/weather/GetWeatherByCity';
+
 const Routes =()=>{
     return(
         <div>
@@ -43,10 +45,11 @@ const Routes =()=>{
                             <Route path="/deleteUserByIdFromAdmin"><DeleteUserByIdFromAdmin/></Route>
                             <Route path="/adminDashboard"><DashboardAdmin/></Route>
                             <Route path="/news"><News/></Route>
-                           <Route path="/weather"><WeatherService/></Route>
-                           <Route path="/getUserByIdFromUser"><GetUserByIdFromUser/></Route>
-                           <Router path="/updateUserById"><UpdateUserById/></Router>
-                           <Route path='/deleteUserById'><DeleteUserById/></Route>
+                            <Route path="/getUserByIdFromUser"><GetUserByIdFromUser/></Route>
+                            <Router path="/updateUserById"><UpdateUserById/></Router>
+                            <Route path='/deleteUserById'><DeleteUserById/></Route>
+                            <Route path= '/getWeatherByCity'><GetWeatherByCity/></Route>
+                            <Route path='/userDashboard'><UserDashboard/></Route>
                         </Switch>
                     </div>
                     <Footer/>

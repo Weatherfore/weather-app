@@ -32,11 +32,11 @@ const DeleteUserByIdFromAdmin = () => {
     }
 
     return (
-        <div className="container" >
-            <h1 className="display-4 text-primary">Delete User By Id</h1>
+        <div className="admin_container" >
+            <h1 className="display-4 p-3 mb-2 d-flex font-weight-bold justify-content-center bg-light border border-info">Delete User By Id</h1>
             
-            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3">
-                <p>Enter the user Id to delete details</p>
+            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3 jumbotron justify-content-center">
+                <h4>Enter the user Id to delete details</h4>
                 <form className="form form-group row pt-3 pb-3 px-3 py-3" data-testid="invalid-form">
                     <input
                         type="number"
@@ -55,7 +55,7 @@ const DeleteUserByIdFromAdmin = () => {
                         id="submit"
                         data-testid="submit"
                         name="submit"
-                        className="btn btn-primary mb-3"
+                        className="btn btn-primary mb-3 submit2"
                         value="Delete User Account"
                         onClick={submitDeleteUserById}
                     />

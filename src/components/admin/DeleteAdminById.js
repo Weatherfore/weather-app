@@ -43,8 +43,8 @@ const DeleteAdminById = () => {
                         type="number"
                         id="adminId"
                         //adding test-jest
-                        data-testid="adminId"
-                        data-testid="required-input" required
+                        data-testid="adminId3"
+                        
                         name="adminId"
                         className="form-control mb-3 justify-content-center"
                         value={oneAdmin.adminId}
@@ -54,7 +54,7 @@ const DeleteAdminById = () => {
                     <input
                         type="submit"
                         id="submit"
-                        data-testid="submit"
+                        data-testid="submit3"
                         name="submit"
                         className="btn btn-primary mb-3 submit2"
                         value="Delete Admin Account"

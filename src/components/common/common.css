@@ -26,7 +26,7 @@
   }
 
   .admin_container{
-    height:90vh;
+    height:110vh;
     background: url("../../asset/asset10.jpg") center center no-repeat;
     background-size:cover;
     display: grid;
@@ -79,3 +79,38 @@
     justify-content: center;
     align-items: center;
   }
+  .user_container{
+    height:110vh;
+    background: url("../../asset/asset13.gif") center center no-repeat;
+    background-size:cover;
+    display: grid;
+    align-items:flex-start;
+    justify-content:flex-start;
+    color: rgb(100, 129, 211);
+    opacity:0.8
+  }
+
+  .submit3{
+    background-color: rgb(100, 129, 211) ;
+  }
+   .card_container{
+     width :18rem;
+     height:fit-content
+   }
+
+   .weather_container{
+    height:130vh;
+    background: url("../../asset/asset1.gif") center center no-repeat;
+    background-size:cover;
+    display:grid;
+    align-items:flex-start;
+    justify-content:flex-start;
+    color: rgb(165, 53, 156);
+    opacity:0.7
+  }
+
+  .submit_button{
+    background-color: rgb(165, 53, 156);
+  }
+
+   

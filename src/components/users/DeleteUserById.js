@@ -1,9 +1,8 @@
-import axios from 'axios';
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteUserById} from '../../redux/UserSlice';
-
+import axios from 'axios';
+import React from 'react';
 const DeleteUserById= () => {
 
     const dispatch = useDispatch();
@@ -21,7 +20,7 @@ const DeleteUserById= () => {
 
     const submitDeleteUserById = (evt) => {
         console.log("submitDeleteUserById");
-        axios.delete(`http://localhost:8082/swagger-ui.html#/registration-controller/deleteUserByIdUsingDELETE_1/${oneUser.rid}`)
+        axios.delete(`http://localhost:8086/weather/deleteUserById/${oneUser.rid}`)
             .then(async (response) => {
                 await dispatch(deleteUserById(response.data));
                 setDeleteOneUser(`User account was successfully deleted`);
@@ -32,18 +31,17 @@ const DeleteUserById= () => {
     }
 
     return (
-        <div className="container" >
-            <h1 className="display-4 text-primary">Delete User By Id</h1>
+        <div className="user_container" >
+            <h1 className="display-4 p-3 mb-2 bg-gradient-danger d-flex font-weight-bold justify-content-center">Delete User By Id</h1>
             
-            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3">
-                <p>Enter the user Id to delete its details</p>
-                <form className="form form-group row pt-3 pb-3 px-3 py-3" data-testid="invalid-form">
+            <div className="border border-danger pt-3 pb-3 px-3 py-3 mt-3 mb-3 jumbotron ">
+                <h5 bg-light>Enter the user Id to delete its details</h5>
+                <form className="form form-group form-dark row mt-3 font-weight-bold font-italic jumbotron d-flex justify-content-center border" data-testid="invalid-form">
                     <input
                         type="number"
                         id="rid"
                         //adding test-jest
                         data-testid="rid"
-                        data-testid="required-input" required
                         name="rid"
                         className="form-control mb-3"
                         value={oneUser.rid}
@@ -55,7 +53,7 @@ const DeleteUserById= () => {
                         id="submit"
                         data-testid="submit"
                         name="submit"
-                        className="btn btn-primary mb-3"
+                        className="btn btn-primary mb-3 submit3"
                         value="Delete User Account"
                         onClick={submitDeleteUserById}
                     />

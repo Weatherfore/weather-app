@@ -23,9 +23,9 @@ body {
   margin: 0 auto;
 }
 
-.title-container {
+.background-container {
   height: 90vh;
-  background: url("./asset/asset1.gif") center center no-repeat;
+  background: url("./asset/asset13.gif") center center no-repeat;
   background-size:Cover;
   display: flex;
   align-items: center;

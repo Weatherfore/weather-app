@@ -23,12 +23,12 @@ const GetAllUsers = () => {
     }
 
     return (
-        <div className="container">
-            <h2>Get All User's Data</h2>
+        <div className="admin_container">
+            <h2 className="bg-light">Get All User's Data</h2>
             
-            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3">
-                <h4>Click here to get all user's data</h4>
-                <div>
+            <div className="border border-primary pt-3 pb-3 px-3 py-3 mt-3 mb-3 jumbotron">
+                <h4 className="bg-light">Click here to get all user's data</h4>
+                <div className="form form-group form-dark row mt-3 span font-weight-bold font-italic  d-flex justify-content-center border border-success">
                     <input
                         type="submit"
                         id="submit"
@@ -38,15 +38,25 @@ const GetAllUsers = () => {
                         onClick={submitGetAllUser}
                     />
                 </div>
-                <div className="Container text-left">
+                <div className="Container text-left bg-light">
                     <div>
-                        <p>RID USERNAME</p>
+                        <p className="row font-italic">
+                            
+                            <div className="col-sm"><u>RID</u>
+                                </div> 
+                                <div className="col-sm"><u>USERNAME</u>
+                                    </div>
+                                </p>
                     </div>
                     {userList.map((r, k) => {
                         console.log(r);
                         return (
-                            <div k={k}>
-                                {r.rid}, {r.userName} 
+                            <div k={k} className="row">
+                               <div className="col-sm"> {r.rid}
+                                </div>
+                                <div className="col-sm">
+                                 {r.userName} 
+                                 </div>
                             </div>
                         )
                     })}

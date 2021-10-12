@@ -55,6 +55,7 @@ const Register = (props) => {
                             type="rid"
                             name="rid"
                             id="rid"
+                            data-testid="rid5"
                             className="form-control mb-3"
                             placeholder="rid"
                             value={user.rid}
@@ -66,6 +67,7 @@ const Register = (props) => {
                             type="userName"
                             name="userName"
                             id="userName"
+                            data-testid="userName5"
                             className="form-control mb-3"
                             placeholder="userName"
                             value={user.userName}
@@ -76,6 +78,7 @@ const Register = (props) => {
                             type="password"
                             name="password"
                             id="password"
+                            data-testid="password5"
                             className="form-control mb-3"
                             placeholder="password"
                             value={user.password}
@@ -87,6 +90,7 @@ const Register = (props) => {
                             name="reEnterPassword"
                             id="reEnterPassword"
                             className="form-control mb-3"
+                            data-testid="reEnterPassword5"
                             placeholder="reEnterPassword"
                             value={user.reEnterPassword}
                             onChange={handleUser} required />
@@ -97,6 +101,7 @@ const Register = (props) => {
                             type="submit"
                             id="submit"
                             name="submit"
+                            data-testid="submit5"
                             className="form-control btn btn-primary mb-3 bg-danger text-light"
                             value="Register"
                             onClick={submitUser}

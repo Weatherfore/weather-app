@@ -56,6 +56,8 @@ const AdminRegister = (props) => {
                             type="number"
                             name="adminId"
                             id="adminId"
+                            //for test case
+                            data-testid="adminId2"
                             className="form-control mb-3"
                             placeholder="Admin Id"
                             value={admin.adminId}
@@ -67,6 +69,8 @@ const AdminRegister = (props) => {
                             type="adminName"
                             name="adminName"
                             id="adminName"
+                            //for test case
+                            data-testId="adminName2"
                             className="form-control mb-3"
                             placeholder="adminName"
                             value={admin.adminName}
@@ -78,6 +82,8 @@ const AdminRegister = (props) => {
                             type="password"
                             name="adminPassword"
                             id="adminPassword"
+                            //for test case
+                            data-testid="adminPassword2"
                             className="form-control mb-3"
                             placeholder="Password"
                             value={admin.adminPassword}
@@ -87,6 +93,8 @@ const AdminRegister = (props) => {
                         <input
                             type="submit"
                             id="submit"
+                            //for test case
+                            data-testid="submit2"
                             name="submit"
                             className="form-control btn btn-primary mb-3 submit"
                             value="AdminRegister"
