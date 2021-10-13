@@ -31,6 +31,7 @@ const UpdateAdminById = () => {
                 dispatch(updateAdminById(response.data));
                 console.log(response.data);
                 console.log(response.headers);
+                alert("Admin details are updated successfully");
             }).catch((error) => {
                 setErrors(validation2(adminData2))
                 console.log(error.message)
@@ -52,7 +53,7 @@ const UpdateAdminById = () => {
                                 type="number"
                                 id="adminId"
                                 name="adminId"
-                                data-testid="adminId4"
+                                data-testid="adminId5"
                                 className="form-control mb-3"
                                 value={adminData2.adminId}
                                 placeholder = "Admin Id"
@@ -63,7 +64,7 @@ const UpdateAdminById = () => {
                                 type="text"
                                 id="adminName"
                                 name="adminName"
-                                data-testid="adminName4"
+                                data-testid="adminName5"
                                 className="form-control mb-3"
                                 value={adminData2.adminName}
                                 placeholder = "Admin Name"
@@ -75,7 +76,7 @@ const UpdateAdminById = () => {
                                 type="text"
                                 id="adminPassword"
                                 name="adminPassword"
-                                data-testid="adminPassword4"
+                                data-testid="adminPassword5"
                                 className="form-control mb-3"
                                 value={adminData2.adminPassword}
                                 placeholder = "Admin Password"
@@ -86,7 +87,7 @@ const UpdateAdminById = () => {
                             type="submit"
                             id="submit"
                             name="submit"
-                            data-testid="submit4"
+                            data-testid="submit5"
                             className="btn btn-primary mb-3 submit2"
                             value="submit"
                         />

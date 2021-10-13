@@ -21,7 +21,9 @@ import GetUserByIdFromUser from './components/users/GetUserById';
 import DeleteUserById from './components/users/DeleteUserById';
 import UpdateUserById from './components/users/UpdateUserById';
 import GetWeatherByCityName from './components/weather/GetWeatherByCityName';
-
+import PageNotFound from './components/common/PageNotFound';
+import About from './components/common/About';
+import Contact from './components/common/Contact';
 const Routes =()=>{
     return(
         <div>
@@ -50,6 +52,10 @@ const Routes =()=>{
                             <Route path='/deleteUserById'><DeleteUserById/></Route>
                             <Route path= '/getWeatherByCityName'><GetWeatherByCityName/></Route>
                             <Route path='/userDashboard'><UserDashboard/></Route>
+                            <Route path='/about'><About/></Route>
+                            <Route path="/contact"><Contact/></Route>
+                            <Route path="/*"> <PageNotFound /> </Route>
+                            
                         </Switch>
                     </div>
                     <Footer/>

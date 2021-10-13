@@ -35,7 +35,8 @@ const AdminRegister = (props) => {
         axios.post(`http://localhost:8086/weather/admin/addAdmin`, admin)
             .then((response) => {
                 console.log(response.data);
-                history.push('/adminLogin');
+                history.push('/adminDashboard');
+                alert("Registered Successfully!");
             }).catch((error) => {
                 setErrors(validation2(admin))
                 console.log(error.message)

@@ -30,6 +30,7 @@ const GetAllAdmins = () => {
                         type="submit"
                         id="submit"
                         name="submit"
+                        data-testid="submit4"
                         className="btn btn-primary mb-3 justify-content-center submit2"
                         value="View All Admins"
                         onClick={submitGetAllAdmin}

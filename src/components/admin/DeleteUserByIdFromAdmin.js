@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteUserById} from '../../redux/UserSlice';
 import '../common/common.css';
+import { useHistory } from 'react-router';
 const DeleteUserByIdFromAdmin = () => {
 
     const dispatch = useDispatch();
     const userData = useSelector((state) => state.user.userState);
-    
+    const history = useHistory(); 
     const [deleteOneUser, setDeleteOneUser] = useState('Enter User Id to delete the user details');
     const [oneUser, setOneUser] = useState({});
    
@@ -25,6 +26,7 @@ const DeleteUserByIdFromAdmin = () => {
             .then(async (response) => {
                 await dispatch(deleteUserById(response.data));
                 setDeleteOneUser(`User account was successfully deleted`);
+                history.push('/adminDashboard');
             }).catch(async (error) => {
                 await setDeleteOneUser(`${error.message}: User with the id ${oneUser.rid} is not found.`);
             });
@@ -42,8 +44,7 @@ const DeleteUserByIdFromAdmin = () => {
                         type="number"
                         id="rid"
                         //adding test-jest
-                        data-testid="rid"
-                        data-testid="required-input" required
+                        data-testid="rid1"
                         name="rid"
                         className="form-control mb-3"
                         value={oneUser.rid}
@@ -53,7 +54,7 @@ const DeleteUserByIdFromAdmin = () => {
                     <input
                         type="submit"
                         id="submit"
-                        data-testid="submit"
+                        data-testid="submit1"
                         name="submit"
                         className="btn btn-primary mb-3 submit2"
                         value="Delete User Account"

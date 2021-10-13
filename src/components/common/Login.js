@@ -42,7 +42,7 @@ const Login = (props) => {
         axios.post(`http://localhost:8086/weather/user/-/login`, user)
             .then((response) => {
                 console.log(response.data);
-                history.push('/home');
+                history.push('/userDashboard');
                 // alert("You logged in successfully");
             }).catch((error) => {
                 setErrors(validation(user))
@@ -63,8 +63,7 @@ const Login = (props) => {
                             className="form-control"
                             name="rid"
                             id="rid"
-                            //data-test-id
-                            data-testid="rid"
+                            data-testid="rid10"
                             className="form-control mb-3"
                             placeholder="rid"
                             value={user.rid}
@@ -76,8 +75,8 @@ const Login = (props) => {
                             className="form-control"
                             name="userName"
                             id="userName"
-                            //for test case
-                            data-testid="userName"
+                            
+                            data-testid="userName10"
                             className="form-control mb-3"
                             placeholder="username"
                             value={user.userName}
@@ -89,7 +88,7 @@ const Login = (props) => {
                             name="password"
                             id="password"
                             //for test case
-                            data-testid="password"
+                            data-testid="password10"
                             className="form-control mb-3"
                             placeholder="Password"
                             value={user.password}
@@ -102,7 +101,7 @@ const Login = (props) => {
                             name="reEnterPassword"
                             id="reEnterPassword"
                             //for test case
-                            data-testid="reEnterPassword"
+                            data-testid="reEnterPassword10"
                             className="form-control mb-3"
                             placeholder="reEnterPassword"
                             value={user.reEnterPassword}
@@ -112,7 +111,7 @@ const Login = (props) => {
                             type="submit"
                             id="submit"
                             //for test case
-                            data-testid="submit"
+                            data-testid="submit10"
                             name="submit"
                             className="form-control btn btn-primary mb-3 bg-danger text-light"
                             value="Login"

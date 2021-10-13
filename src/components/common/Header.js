@@ -5,6 +5,7 @@ import News from './News';
 import AdminLogin from './AdminLogin';
 import UserRegistration from '../users/UserRegistration';
 import AdminRegistration from '../admin/AdminRegistration';
+import About from '../../components/common/About';
 const Header =() =>{
     return (
       <header class="header sticky-top">
@@ -33,6 +34,10 @@ const Header =() =>{
                       <li className="nav-item">
                           <Link className="nav-link" to="/AdminLogin" >Admin Login</Link>
                       </li> 
+                      <li className="nav-item">
+                          <Link className="nav-link" to="/About" >About</Link>
+                      </li> 
+                      
                       
                   </ul>
               </div>

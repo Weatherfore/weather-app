@@ -25,7 +25,11 @@ const UserDashboard = (props) => {
         console.log('clicked');
         history.push('/getWeatherByCityName');
     }
-  
+     
+    const onLogout=()=>{
+        console.log('clicked');
+        history.push('/home');
+    }
 
     return (
         <div class="dashboard_weather">
@@ -56,6 +60,7 @@ const UserDashboard = (props) => {
             <form className="form form-group form-dark " onSubmit={onGetWeather}>
                 <div><button onClick={onGetWeather} className="btn btn-dark button1">Get Weather</button></div>
             </form>
+            <button className="btn btn-dark" onClick={onLogout}>Logout</button>
             </div>
         
             </div> 

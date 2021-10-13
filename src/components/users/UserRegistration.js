@@ -55,7 +55,7 @@ const Register = (props) => {
                             type="rid"
                             name="rid"
                             id="rid"
-                            data-testid="rid5"
+                            data-testid="rid11"
                             className="form-control mb-3"
                             placeholder="rid"
                             value={user.rid}
@@ -67,7 +67,7 @@ const Register = (props) => {
                             type="userName"
                             name="userName"
                             id="userName"
-                            data-testid="userName5"
+                            data-testid="userName11"
                             className="form-control mb-3"
                             placeholder="userName"
                             value={user.userName}
@@ -78,7 +78,7 @@ const Register = (props) => {
                             type="password"
                             name="password"
                             id="password"
-                            data-testid="password5"
+                            data-testid="password11"
                             className="form-control mb-3"
                             placeholder="password"
                             value={user.password}
@@ -90,7 +90,7 @@ const Register = (props) => {
                             name="reEnterPassword"
                             id="reEnterPassword"
                             className="form-control mb-3"
-                            data-testid="reEnterPassword5"
+                            data-testid="reEnterPassword11"
                             placeholder="reEnterPassword"
                             value={user.reEnterPassword}
                             onChange={handleUser} required />
@@ -101,7 +101,7 @@ const Register = (props) => {
                             type="submit"
                             id="submit"
                             name="submit"
-                            data-testid="submit5"
+                            data-testid="submit11"
                             className="form-control btn btn-primary mb-3 bg-danger text-light"
                             value="Register"
                             onClick={submitUser}

@@ -55,6 +55,7 @@ const UpdateUserById = () => {
                                 type="number"
                                 id="rid"
                                 name="rid"
+                                data-testid="rid9"
                                 className="form-control mb-3"
                                 value={userData3.rid}
                                 placeholder = "User Id"
@@ -65,6 +66,7 @@ const UpdateUserById = () => {
                                 type="text"
                                 id="userName"
                                 name="userName"
+                                data-testid="userName9"
                                 className="form-control mb-3"
                                 value={userData3.userName}
                                 placeholder = "User Name"
@@ -76,6 +78,7 @@ const UpdateUserById = () => {
                                 type="text"
                                 id="password"
                                 name="password"
+                                data-testid="password9"
                                 className="form-control mb-3"
                                 value={userData3.password}
                                 placeholder = "Password"
@@ -87,6 +90,7 @@ const UpdateUserById = () => {
                                 type="text"
                                 id="password"
                                 name="reEnterPassword"
+                                data-testid="reEnterPassword9"
                                 className="form-control mb-3"
                                 value={userData3.reEnterPassword}
                                 placeholder = "reEnterPassword"
@@ -97,6 +101,7 @@ const UpdateUserById = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit9"
                             name="submit"
                             className="btn btn-primary mb-3 submit3"
                             value="submit"

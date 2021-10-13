@@ -42,7 +42,7 @@ const AdminLogin = (props) => {
         axios.post(`http://localhost:8086/weather/admin/-/login`, admin)
             .then((response) => {
                 console.log(response.data);
-                history.push('/home');
+                history.push('/adminDashboard');
             }).catch((error) => {
                 setErrors(validation2(admin))
                 console.log(error.message)

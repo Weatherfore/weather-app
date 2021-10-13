@@ -3,11 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { deleteUserById} from '../../redux/UserSlice';
 import axios from 'axios';
 import React from 'react';
+import { useHistory } from 'react-router';
 const DeleteUserById= () => {
 
     const dispatch = useDispatch();
     const userData = useSelector((state) => state.user.userState);
-    
+    const history = useHistory(); 
     const [deleteOneUser, setDeleteOneUser] = useState('Enter User Id to delete the user details');
     const [oneUser, setOneUser] = useState({});
    
@@ -24,6 +25,7 @@ const DeleteUserById= () => {
             .then(async (response) => {
                 await dispatch(deleteUserById(response.data));
                 setDeleteOneUser(`User account was successfully deleted`);
+                history.push('/userDashboard');
             }).catch(async (error) => {
                 await setDeleteOneUser(`${error.message}: User with the id ${oneUser.rid} is not found.`);
             });
@@ -41,7 +43,7 @@ const DeleteUserById= () => {
                         type="number"
                         id="rid"
                         //adding test-jest
-                        data-testid="rid"
+                        data-testid="rid8"
                         name="rid"
                         className="form-control mb-3"
                         value={oneUser.rid}
@@ -51,7 +53,7 @@ const DeleteUserById= () => {
                     <input
                         type="submit"
                         id="submit"
-                        data-testid="submit"
+                        data-testid="submit8"
                         name="submit"
                         className="btn btn-primary mb-3 submit3"
                         value="Delete User Account"

@@ -3,12 +3,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteAdminById } from '../../redux/AdminSlice';
+import { useHistory } from 'react-router';
 import '../common/common.css';
 const DeleteAdminById = () => {
 
     const dispatch = useDispatch();
     const adminData = useSelector((state) => state.admin.adminState);
-
+    const history = useHistory();
     const [deleteOneAdmin, setDeleteOneAdmin] = useState('Enter Admin Id to delete the Admin');
     const [oneAdmin, setOneAdmin] = useState({});
 
@@ -26,6 +27,7 @@ const DeleteAdminById = () => {
             .then(async (response) => {
                 await dispatch(deleteAdminById(response.data));
                 setDeleteOneAdmin(`Admin account deleted successfully`);
+                history.push('/adminDashboard');
             }).catch(async (error) => {
                 // more custom error handling is required 
                 await setDeleteOneAdmin(`${error.message}: Admin with the id ${oneAdmin.adminId} is not found.`);

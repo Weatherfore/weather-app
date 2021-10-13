@@ -44,7 +44,7 @@ const GetUserById = () => {
                         type="number"
                         id="rid"
                         //adding test-jest
-                        data-testid="rid"
+                        data-testid="rid12"
                         name="rid"
                         className="form-control mb-3"
                         value={oneUser.rid}
@@ -54,7 +54,7 @@ const GetUserById = () => {
                     <input
                         type="submit"
                         id="submit"
-                        data-testid="submit"
+                        data-testid="submit12"
                         name="submit"
                         className="btn btn-primary mb-3 submit3"
                         value="Get User Details"

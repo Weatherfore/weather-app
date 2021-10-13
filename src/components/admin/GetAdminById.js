@@ -44,8 +44,7 @@ const GetAdminById = () => {
                         type="number"
                         id="adminId"
                         //adding test-jest
-                        data-testid="adminId"
-                        data-testid="required-input" required
+                        data-testid="adminId3"
                         name="adminId"
                         className="form-control mb-3"
                         value={oneAdmin.adminId}
@@ -55,7 +54,7 @@ const GetAdminById = () => {
                     <input
                         type="submit"
                         id="submit"
-                        data-testid="submit"
+                        data-testid="submit3"
                         name="submit"
                         className="btn btn-primary mb-3 submit2 border border-success"
                         value="Get Admin Details"
