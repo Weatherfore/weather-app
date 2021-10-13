@@ -28,29 +28,39 @@ const UserDashboard = (props) => {
   
 
     return (
-        <div class="container">
+        <div class="dashboard_weather">
+            <div class="container">
+                <div class="row">
+                    </div><h3 class="display-2 text-info d-flex align-items-right col-sm "><u><b>Welcome to the WeForWeather!!!</b></u></h3>
+                </div>
 
-            <h3 class="display-2 text-info d-flex align-items-right ">Welcome to the WeForWeather!!!</h3>
-           <div class="card card_container">
-               <div class="card-body">
-            <form className="form form-group form-dark row mt-3" onSubmit={onGetUserById}>
-                <div><button onClick={onGetUserById} className="btn btn-primary button1">Get User by Id</button></div>
+
+           <div class="container">
+               <div class="row"> 
+
+           
+                    <form className="form form-group form-dark  " onSubmit={onGetUserById}><div>
+                        <button onClick={onGetUserById} className="btn btn-dark button1">Get User Details</button></div>
+                    </form>
+                
+            <form className="form form-group form-dark" onSubmit={onDeleteUserById}><div>
+                <button onClick={onDeleteUserById} className="btn btn-dark button1">Delete Your Account</button></div>
+            </form>
+            
+            
+            <form className="form form-group form-dark  " onSubmit={onUpdateUserById}>
+                <div><button onClick={onUpdateUserById} className="btn btn-dark button1">Update Your Details</button></div>
+            </form>
+            
+           
+            <form className="form form-group form-dark " onSubmit={onGetWeather}>
+                <div><button onClick={onGetWeather} className="btn btn-dark button1">Get Weather</button></div>
             </form>
             </div>
-            </div>
-            <form className="form form-group form-dark row mt-3" onSubmit={onDeleteUserById}>
-                <div><button onClick={onDeleteUserById} className="btn btn-primary button1">Delete User By Id</button></div>
-            </form>
-
-            <form className="form form-group form-dark row mt-3" onSubmit={onUpdateUserById}>
-                <div><button onClick={onUpdateUserById} className="btn btn-primary button1">Update User By Id</button></div>
-            </form>
-
-            <form className="form form-group form-dark row mt-3" onSubmit={onGetWeather}>
-                <div><button onClick={onGetWeather} className="btn btn-primary button1">Get Weather</button></div>
-            </form>
-          
-        </div>
+        
+            </div> 
+            </div>  
+        
     )
 }
 export default UserDashboard;

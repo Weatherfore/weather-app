@@ -47,14 +47,14 @@
    }
    .button1 {
     border: 0;
-    padding: 20px 12px;
+    padding: 60px 30px;
     margin: 0 0px;
     border-radius: 2px;
-    font-weight: lighter;
+    font-weight:bolder;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 25px;
     cursor: pointer;
-    background-color: #74c5ad;
+   
     color: #fff;
     font-weight: 100;
   }
@@ -94,7 +94,7 @@
     background-color: rgb(100, 129, 211) ;
   }
    .card_container{
-     width :18rem;
+     width :13rem;
      height:fit-content
    }
 
@@ -112,5 +112,40 @@
   .submit_button{
     background-color: rgb(165, 53, 156);
   }
+.dashboard_weather{
+    height:90vh;
+    background: url("../../asset/asset14.gif") center center no-repeat;
+    background-size:cover;
+    display:grid;
+    align-items:flex-start;
+    justify-content:flex-start;
+    color: rgb(145, 34, 135);
+    opacity:0.7
 
-   
+}
+
+.dashboard-admin{
+  height:110vh;
+    background: url("../../asset/asset16.gif") center center no-repeat;
+    background-size:100%;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    color: rgb(145, 34, 135);
+    opacity:0.7
+}
+  
+.button2{
+  border: 0;
+  padding: 40px 15px;
+  margin: 0 0px;
+  border-radius: 2px;
+  font-weight:bolder;
+  letter-spacing: 1px;
+  font-size: 25px;
+  cursor: pointer;
+  align-items: center;
+  justify-content:center;
+  color: #fff;
+  font-weight: 100;
+}
