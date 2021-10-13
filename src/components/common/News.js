@@ -33,7 +33,7 @@ function News(props) {
       {!list
         ? null
         : list.length === 0
-          ? <p><i>No results</i></p>
+          ? <p class="jumbotron display-4"><i>No results</i></p>
           : <ul>
             {list.map((item, i) => (
               <Item key={i} item={item} />
