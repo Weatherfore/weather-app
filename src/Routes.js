@@ -20,7 +20,7 @@ import UserDashboard from './components/users/UserDashboard';
 import GetUserByIdFromUser from './components/users/GetUserById';
 import DeleteUserById from './components/users/DeleteUserById';
 import UpdateUserById from './components/users/UpdateUserById';
-import GetWeatherByCity from './components/weather/GetWeatherByCity';
+import GetWeatherByCityName from './components/weather/GetWeatherByCityName';
 
 const Routes =()=>{
     return(
@@ -45,10 +45,10 @@ const Routes =()=>{
                             <Route path="/deleteUserByIdFromAdmin"><DeleteUserByIdFromAdmin/></Route>
                             <Route path="/adminDashboard"><DashboardAdmin/></Route>
                             <Route path="/news"><News/></Route>
-                            <Route path="/getUserByIdFromUser"><GetUserByIdFromUser/></Route>
+                            <Route path="/getUserById"><GetUserByIdFromUser/></Route>
                             <Router path="/updateUserById"><UpdateUserById/></Router>
                             <Route path='/deleteUserById'><DeleteUserById/></Route>
-                            <Route path= '/getWeatherByCity'><GetWeatherByCity/></Route>
+                            <Route path= '/getWeatherByCityName'><GetWeatherByCityName/></Route>
                             <Route path='/userDashboard'><UserDashboard/></Route>
                         </Switch>
                     </div>

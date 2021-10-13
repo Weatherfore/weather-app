@@ -23,7 +23,7 @@ const UserDashboard = (props) => {
 
     const onGetWeather = () => {
         console.log('clicked');
-        history.push('/getWeather');
+        history.push('/getWeatherByCityName');
     }
   
 
